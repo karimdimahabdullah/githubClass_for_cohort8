@@ -1,5 +1,5 @@
 //if/else
-    
+
 let age = 40;
 
 if(age >= 18){
@@ -53,3 +53,4 @@ for(let scoreCount = 0; scoreCount < scores.length; scoreCount++){
 
 
 
+ 
