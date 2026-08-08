@@ -37,7 +37,40 @@ console.log(student)
 
 let employee = {
     name: 'John Doe',
-    position: 'Software Engineer',
+    role: 'Software Engineer',
     salary: 50000,
     city: 'Ghana',
 }
+
+let hisName = employee.name
+let hisRole = employee.role
+let hisSalary = employee.salary
+let hisCity = employee.city
+
+
+const {name: name, role: role, salary, city} = employee
+
+
+let DNA = {
+    gender: 'XY',
+    complexion: 'dark',
+}
+
+let offSpring = {
+    ...DNA,
+    name: 'KARIM DIMAH ABDULLAH',
+    age: 40,
+}
+
+console.log(offSpring)
+
+//iteration through an object 
+// for...in loop
+for (let key in offSpring) {
+    console.log(key, offSpring[key])
+}   
+
+
+console.log(Object.keys(offSpring))
+console.log(Object.values(offSpring))
+console.log(Object.entries(offSpring))
