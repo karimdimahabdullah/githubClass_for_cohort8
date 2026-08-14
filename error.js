@@ -32,7 +32,7 @@ loadUserData(-1);  // Failed: User ID must be...  -->  Loading complete.
 function registerStudent(name, age) {
     try {
         if (!name || name.trim() === "") {
-            throw new Error("Name cannot be empty!");
+            throw new Error("Name cannot be empty!"); // custom error message
         }
         if (age < 16 || age > 60) {
             throw new Error("Age must be between 16 and 60. Got: " + age);
@@ -46,3 +46,4 @@ function registerStudent(name, age) {
 registerStudent("Bola Okafor", 22); // Student registered: Bola Okafor, Age: 22
 registerStudent("", 22);            // Registration failed: Name cannot be empty!
 registerStudent("Kemi", 12);        // Registration failed: Age must be between 16 and 60.
+
