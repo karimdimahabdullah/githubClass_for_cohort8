@@ -23,3 +23,14 @@ console.log(filename.startsWith("draft"));  // false
 console.log(filename.endsWith(".pdf"));     // true
 console.log(filename.endsWith(".docx"));    // false
 
+const extractExample = "Esther";
+console.log(extractExample.slice(0, 3)); // Output: "Est"
+console.log(extractExample.slice(3)); // Output: "her"
+console.log(extractExample.slice(-3)); // Output: "her"
+console.log(extractExample.substring(0, 3)); // Output: "Est"
+console.log(extractExample.substring(3)); // Output: "her"
+console.log(extractExample.substring(-3)); // Output: "Esther" (negative index treated as 0)
+
+
+
+
