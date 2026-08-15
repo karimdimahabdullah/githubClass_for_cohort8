@@ -32,5 +32,23 @@ console.log(extractExample.substring(3)); // Output: "her"
 console.log(extractExample.substring(-3)); // Output: "Esther" (negative index treated as 0)
 
 
+//replace and replaceAll
+const stringText = "James is a fine boy, James is so smart and cute and James is a Software Developer";
+console.log(stringText.replace("James", "he")); 
 
+console.log(stringText.replaceAll("James", "he"));
+
+let splittedText = stringText.split(",")
+console.log(splittedText[1].replaceAll("James", "he")); //
+
+//reverse
+let palindrome = "madam"
+let reversed = palindrome.split("").reverse().join("");
+
+console.log(reversed); // Output: "madam"
+
+function wordCheck(word) {  
+    return word === word.split("").reverse().join("") ? "Yes it is a palindrome" : "No it is not a palindrome";
+}
+console.log(wordCheck("fuzzy")); // Output: true`
 
